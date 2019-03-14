@@ -84,12 +84,12 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
         g.fillRect(25,75,850,575);
         
         //draw scores
-        g.setColor(Color.BLACK);
-        g.setFont(new Font("arial",Font.PLAIN,14));
+        g.setColor(Color.WHITE);
+        g.setFont(new Font("arial",Font.BOLD,14));
         g.drawString("Your Score: " + score, 730, 32);
         //draw length
-        g.setColor(Color.BLACK);
-        g.setFont(new Font("arial",Font.PLAIN,14));
+        g.setColor(Color.WHITE);
+        g.setFont(new Font("arial",Font.BOLD,14));
         g.drawString("Snake Length: " + lengthOfSnake, 730, 52);
         
         //-----------------MOVING STUFF------------------

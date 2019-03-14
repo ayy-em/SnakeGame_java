@@ -14,7 +14,7 @@ public class SnakeLoader {
         //frame.setBackground(Color.GRAY);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        frame.setTitle("Ирочка, солнышко, с праздником, я тебя очень люблю");
+        frame.setTitle("Super Snake - Ultimate Almost Not Buggy Edition");
         Gameplay gp = new Gameplay();
         frame.add(gp);
         frame.setVisible(true);
