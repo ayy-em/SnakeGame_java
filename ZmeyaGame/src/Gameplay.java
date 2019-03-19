@@ -124,8 +124,13 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
         food = new ImageIcon("resources/food.png");
         if (foodX[foodXpos] == snakeXlen[0] && foodY[foodYpos] == snakeYlen[0]) {
             lengthOfSnake++;
-            foodXpos = random.nextInt(34);
-            foodYpos = random.nextInt(23);
+            //generate random position of food,  check collision food and snake head
+            boolean foodPositionInsideSnake = true;
+            while (foodPositionInsideSnake) {
+                foodXpos = random.nextInt(34);
+                foodYpos = random.nextInt(23);
+                foodPositionInsideSnake = foodXpos == snakeXlen[0] && foodYpos == snakeYlen[0];
+            }
             if (delay > 10) {
                 delay = delay - 5;
                 timer.setDelay(delay);
