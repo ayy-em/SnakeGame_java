@@ -38,8 +38,8 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener {
             525,550,575,600,625};
     //food position
     private Random random = new Random();
-    private int foodXpos = random.nextInt(34);
-    private int foodYpos = random.nextInt(23);
+    private int foodXpos = random.nextInt(33);
+    private int foodYpos = random.nextInt(22);
     //game pace
     private Timer timer;
     private int delay = 100;
